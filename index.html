@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeboy Coffee</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background: #f8f8f8;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #6d4c41, #8d6e63);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3e2723;
+            padding: 15px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 2px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff7043;
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .menu-item .text {
+            text-align: left;
+        }
+        .menu-item .text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .menu-item .text p {
+            font-size: 1.2rem;
+            color: #777;
+        }
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
+        }
+        footer img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ff7043;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-item img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Homeboy Coffee</h1>
+    <p>Disfruta del mejor café y la mejor compañía</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#menu">Menú</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bienvenido a Homeboy Coffee</h2>
+    <p>El lugar donde cada taza de café es una obra de arte. Disfruta de un ambiente relajante, ideal para trabajar, estudiar o compartir con amigos. ¡Ven y vive la experiencia Homeboy!</p>
+</section>
+
+<section id="menu">
+    <h2>Menú</h2>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/120?text=Americano" alt="Café Americano">
+        <div class="text">
+            <h3>Café Americano</h3>
+            <p>Una taza fuerte y pura, ideal para empezar el día.</p>
+            <span>$40 MXN</span>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/120?text=Cappuccino" alt="Cappuccino">
+        <div class="text">
+            <h3>Cappuccino</h3>
+            <p>Espresso suave con espuma cremosa, el toque perfecto.</p>
+            <span>$50 MXN</span>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/120?text=Latte" alt="Latte">
+        <div class="text">
+            <h3>Latte</h3>
+            <p>Café cremoso con leche vaporizada, un deleite suave.</p>
+            <span>$55 MXN</span>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/120?text=Pastel" alt="Pastel de Chocolate">
+        <div class="text">
+            <h3>Pastel de Chocolate</h3>
+            <p>Un pastel indulgente para acompañar tu café.</p>
+            <span>$35 MXN</span>
+        </div>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Visítanos en nuestra cafetería:</p>
+    <p>Calle Ejemplo 123, Ciudad, México</p>
+    <p>Teléfono: (55) 1234 5678</p>
+    <p>Email: contacto@homeboycoffee.com</p>
+</section>
+
+<footer>
+    <img src="https://via.placeholder.com/150?text=Logo" alt="Logo Homeboy Coffee">
+    <p>&copy; 2025 Homeboy Coffee. Todos los derechos reservados.</p>
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
